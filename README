@@ -1,0 +1,50 @@
+<img src="https://raw.githubusercontent.com/Waves59/Injexius/refs/heads/main/.images/EF850BA7-3E51-4C63-8923-4466F393B21A.webp" alt="Injexius" width="100%">
+
+# Signus
+
+Framework agnostic signals.
+
+</br>
+
+### Installation
+
+```bash
+> npm install signus
+> yarn add signus
+> pnpm add signus
+```
+
+</br>
+
+### Usage
+
+You must create a `SignalManager` instance and use it to create signals.
+</br>
+
+### Example
+
+```typescript
+import { SignalManager } from "signus";
+
+const signalManager = new SignalManager();
+const signal = signalManager.createSignal("mySignal");
+signal.subscribe(value => console.log(value));
+signal.emit("Hello world");
+```
+
+</br>
+
+### Reuse a signal
+
+If you want to reuse a signal, you can get it from the `SignalManager` instance.
+
+```typescript
+import signalManager from "./signalManager";
+
+const signal = signalManager.getSignal("mySignal");
+signal.subscribe(value => console.log(value));
+```
+
+### License
+
+MIT
