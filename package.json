@@ -1,6 +1,6 @@
 {
   "name": "signus",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Framework agnostic signals",
   "main": "index.js",
   "scripts": {
