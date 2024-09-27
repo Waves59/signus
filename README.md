@@ -45,6 +45,28 @@ const signal = signalManager.getSignal("mySignal");
 signal.subscribe((value) => console.log(value));
 ```
 
+</br>
+
+### Remove a signal from the manager
+
+You can remove a signal from the manager by calling the `removeSignal` method.
+
+```typescript
+signalManager.removeSignal("mySignal");
+```
+
+</br>
+
+### Remove a listener from a signal
+
+You can remove a listener from a signal by calling the `unsubscribe` method.
+
+```typescript
+signal.unsubscribe();
+```
+
+</br>
+
 ### License
 
 MIT
