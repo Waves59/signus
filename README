@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/Waves59/Injexius/refs/heads/main/.images/EF850BA7-3E51-4C63-8923-4466F393B21A.webp" alt="Injexius" width="100%">
+<img src="https://github.com/Waves59/signus/blob/main/.images/chauvesouris%20lib.png?raw=true" alt="Signus" width="100%">
 
 # Signus
 
@@ -28,7 +28,7 @@ import { SignalManager } from "signus";
 
 const signalManager = new SignalManager();
 const signal = signalManager.createSignal("mySignal");
-signal.subscribe(value => console.log(value));
+signal.subscribe((value) => console.log(value));
 signal.emit("Hello world");
 ```
 
@@ -42,7 +42,7 @@ If you want to reuse a signal, you can get it from the `SignalManager` instance.
 import signalManager from "./signalManager";
 
 const signal = signalManager.getSignal("mySignal");
-signal.subscribe(value => console.log(value));
+signal.subscribe((value) => console.log(value));
 ```
 
 ### License
